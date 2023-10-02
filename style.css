@@ -1,0 +1,70 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.panneaux{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+.panneau:hover{
+    flex: 2;
+}
+.coucou:hover{
+    transform: translateY(300px);
+    transition:  ease-in 2s;
+
+}
+.panneau{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1{
+    background-image: url("images/1.png");
+}
+.img2{
+    background-image: url("images/2.png");
+}
+.img3{
+    background-image: url("images/3.png");
+}
+.img4{
+    background-image: url("images/4.png");
+}
+.img5{
+    background-image: url("images/5.png");
+}
+
+.coucou{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+
+}
+.route{
+    height: 20vh;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+.voiture{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    transition: 2s;
+}
+.route>.voiture:hover{
+    transform: translateX(400px);
+}
